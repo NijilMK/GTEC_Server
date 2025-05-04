@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DataAccessLayer.OzoneErpContext" Collapsed="true">
+    <Position X="138" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FIVCAWAAAhBEyAQAAkhCBQAACACiGgAiEBAGBhEQAAA=</HashCode>
+      <FileName>Data\OzoneERPContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Base" Collapsed="true">
+    <Position X="67.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAACAAAAAAgAAAQIAAAA=</HashCode>
+      <FileName>Base.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.BaseCompany" Collapsed="true">
+    <Position X="66.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAEAAAAAAAABAAIAAA=</HashCode>
+      <FileName>Base.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Accounting.Masters.Ledger" Collapsed="true">
+    <Position X="46" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAhAAAAAAgAAAQAAAAAAAAAAgAAAAQAAAE=</HashCode>
+      <FileName>Accounting\Masters\Ledger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Accounting.Masters.LedgerGroup" Collapsed="true">
+    <Position X="61.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAQAQAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Accounting\Masters\LedgerGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Transactions.Logs" Collapsed="true">
+    <Position X="136.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Accounting\Transactions\AccountLogs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Address" Collapsed="true">
+    <Position X="91" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAQEAAAAAABAAAAAQAAAIQAAAAEAAABAAAAAA=</HashCode>
+      <FileName>General\Masters\Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Area" Collapsed="true">
+    <Position X="106.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAQAAAAAAAAAAAAAQAAAIQAAAAEAAABAAAAAA=</HashCode>
+      <FileName>General\Masters\Area.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Bank" Collapsed="true">
+    <Position X="120.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAQAAAAAgAAAgCABAAAAAAAAA=</HashCode>
+      <FileName>General\Masters\Bank.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.BillFormat">
+    <Position X="1" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAgAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>General\Masters\BillFormat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+   <Class Name="DataAccessLayer.General.Masters.BillType">
+    <Position X="1" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAgAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>General\Masters\BillType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.PrintType">
+    <Position X="1" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAgAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>General\Masters\PrintType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Branch" Collapsed="true">
+    <Position X="14.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAQAAQAAAAAAACAAQAAAAAAIQAAAAEAAABAAAAAA=</HashCode>
+      <FileName>General\Masters\Branch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Cess" Collapsed="true">
+    <Position X="30.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>General\Masters\Cess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Company" Collapsed="true">
+    <Position X="133.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQQAAQAAAAAAAAAAAQAAAAAIQAAAAAAAABAAAAAA=</HashCode>
+      <FileName>General\Masters\Company.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.CompanySettings" Collapsed="true">
+    <Position X="64" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgEAACgAAAAAAAIAAAABACAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>General\Masters\CompanySettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Country" Collapsed="true">
+    <Position X="77.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAACgAAAAAAAIAAAAQACAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>General\Masters\Country.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Coupon" Collapsed="true">
+    <Position X="93.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAQAAAAAAAAAAACAAAAAAAAAAAAhAAAgAAAAAGAAA=</HashCode>
+      <FileName>General\Masters\Coupon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Currency" Collapsed="true">
+    <Position X="109" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAIQAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>General\Masters\Currency.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Customer" Collapsed="true">
+    <Position X="122.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgARAESGABAAAABEAAECQAAAoQAQCCERIAJAAAAAA=</HashCode>
+      <FileName>General\Masters\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.CustomerAddress" Collapsed="true">
+    <Position X="3.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAQAAQCAAAABAAAAAAAACAAIQABACEAAAJAAAAAA=</HashCode>
+      <FileName>General\Masters\CustomerAddress.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Designation" Collapsed="true">
+    <Position X="16.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>General\Masters\Designation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.District" Collapsed="true">
+    <Position X="32.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAQAAAIQAAAAAAAABAAAAAA=</HashCode>
+      <FileName>General\Masters\District.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Driver" Collapsed="true">
+    <Position X="48.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAEAAAAAAAAAAKAAAAAAAAAAA=</HashCode>
+      <FileName>General\Masters\Driver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Employee" Collapsed="true">
+    <Position X="66.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgQQEAyGAAACAAgCAIEAQAACIQIgCAFAAANAAAAIA=</HashCode>
+      <FileName>General\Masters\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.EmployeeDocument" Collapsed="true">
+    <Position X="79.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAQACBIQAAAAAAAAAAACAAA=</HashCode>
+      <FileName>General\Masters\EmployeeDocument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.EmployeeEducation" Collapsed="true">
+    <Position X="95.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAIACAAAACAAAAAAAQQAAAAACAAA=</HashCode>
+      <FileName>General\Masters\EmployeeEducation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.FinancialYear" Collapsed="true">
+    <Position X="111.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAgAAAAAAAAAAAAAEABAAA=</HashCode>
+      <FileName>General\Masters\FinancialYear.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Menu" Collapsed="true">
+    <Position X="124.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAACACAAAAAAAQAAAAIAAAAAACAAAAAEAAAA=</HashCode>
+      <FileName>General\Masters\Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Printer" Collapsed="true">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>General\Masters\Printer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Route" Collapsed="true">
+    <Position X="19" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAQAAAAA=</HashCode>
+      <FileName>General\Masters\Route.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Size" Collapsed="true">
+    <Position X="34.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAQAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>General\Masters\Size.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Sku" Collapsed="true">
+    <Position X="50.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAgQAQAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>General\Masters\Sku.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.State" Collapsed="true">
+    <Position X="68.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAIQAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>General\Masters\State.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Tax" Collapsed="true">
+    <Position X="82" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAEAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>General\Masters\Tax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.TaxType" Collapsed="true">
+    <Position X="97.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>General\Masters\TaxType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.User" Collapsed="true">
+    <Position X="113.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAACAAIAAAAAAAACgACAQAAAAAAAAA=</HashCode>
+      <FileName>General\Masters\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.UserType" Collapsed="true">
+    <Position X="127" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>General\Masters\UserType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.UserTypeMenu" Collapsed="true">
+    <Position X="7.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAIgAAAAAAAAAAQAAAAIDAAAAQAAAQAAAAA=</HashCode>
+      <FileName>General\Masters\UserTypeMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Masters.Vehicle" Collapsed="true">
+    <Position X="21.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAABAAAAAAAAAAAgAAAAAIAAAAAAAA=</HashCode>
+      <FileName>General\Masters\Vehicle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.General.Settings.PageSetting" Collapsed="true">
+    <Position X="52.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>General\Settings\PageSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.AccountAegingTrans" Collapsed="true">
+    <Position X="84.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAEAAAAAAAECAABAAAAAAAAAAgAAAAAAAEAAAI=</HashCode>
+      <FileName>Inventory\AccountAegingTrans.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.AccountAgeing" Collapsed="true">
+    <Position X="100" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABEAAAIAAEEAAARAAAMEABAABgAAAAEBIAAAAA=</HashCode>
+      <FileName>Inventory\AccountAgeing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.Category" Collapsed="true">
+    <Position X="129.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAABAAAgAAAAAgAAA=</HashCode>
+      <FileName>Inventory\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.HsnCode" Collapsed="true">
+    <Position X="10" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Inventory\HsnCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.Item" Collapsed="true">
+    <Position X="37" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAEgAgIAAoAAACQAGgAAAAAAEAAAAAARCBE=</HashCode>
+      <FileName>Inventory\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.ItemImage" Collapsed="true">
+    <Position X="55" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAgAABAAAEAAAAABgAAAEAAAAAAAA=</HashCode>
+      <FileName>Inventory\ItemImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.ItemTransfer" Collapsed="true">
+    <Position X="70.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAEACYAAAAAAAACAABAAAAADAAAAgBIEAAAAAAAQA=</HashCode>
+      <FileName>Inventory\ItemTransfer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.ItemTransferSub" Collapsed="true">
+    <Position X="86.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAIAAABAAAAAIiDABAAAAAAAAAAgAAAAEgAAAAAA=</HashCode>
+      <FileName>Inventory\ItemTransferSub.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.ItemWarehouse" Collapsed="true">
+    <Position X="102.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAFAFAABAAgCACAgqABAAAEAAFAAgiACAAACAABABA=</HashCode>
+      <FileName>Inventory\ItemWarehouse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.Purchase" Collapsed="true">
+    <Position X="23.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FYEhgIBEVgAkACSAiGAJAhCwjQAAwAgBKwAFBwAgEYE=</HashCode>
+      <FileName>Inventory\Purchase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.PurchaseItems" Collapsed="true">
+    <Position X="39.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQREAAAARAQgCCIBiIAAABAEAAACSAAAGgEAigAQAIE=</HashCode>
+      <FileName>Inventory\PurchaseItems.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.PurchaseItemsPartNumber" Collapsed="true">
+    <Position X="57.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAEBABAAAAAyAAAAAAEAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Inventory\PurchaseItemsPartNumber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.PurchaseLedger" Collapsed="true">
+    <Position X="73" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAABAAgAAAACAAAAICAEAAAAAAAAAAAAgAAAIE=</HashCode>
+      <FileName>Inventory\PurchaseLedger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.Sales" Collapsed="true">
+    <Position X="25.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JckAgJJMFtA8IDgQDlg7ACBAfmgAwBjAs2JAB4kQYYk=</HashCode>
+      <FileName>Inventory\Sales.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.SalesCoupon" Collapsed="true">
+    <Position X="41.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAIACAAAAACAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Inventory\SalesCoupon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.SalesItems" Collapsed="true">
+    <Position X="59.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RVBKAABBXAQgiAIQiKgAABCEAAACSRAAHiUQikAAQIE=</HashCode>
+      <FileName>Inventory\SalesItems.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.SalesLedger" Collapsed="true">
+    <Position X="75.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAACAAABICAEAAAAAAAAAAAAgAAQIE=</HashCode>
+      <FileName>Inventory\SalesLedger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.SalesPrint" Collapsed="true">
+    <Position X="88.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAQAAEAAgIAEACAAABAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Inventory\SalesPrint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.StockJournal" Collapsed="true">
+    <Position X="104.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAEIAIAAAACAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Inventory\StockJournal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.StockJournalItems" Collapsed="true">
+    <Position X="118" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAACAAAAioAAAAAAAAAAgAAAAQAAgAAAAAA=</HashCode>
+      <FileName>Inventory\StockJournalItems.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.StockJournalLedger" Collapsed="true">
+    <Position X="131.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAACAEAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Inventory\StockJournalLedger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.Voucher" Collapsed="true">
+    <Position X="12.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgEAGAEEAMAQAACAAEAACAEAAQAABAEMEAECAAAIA=</HashCode>
+      <FileName>Inventory\Voucher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.VoucherTrans" Collapsed="true">
+    <Position X="28" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAEAEAAAAAAAAAAAIAAAEI=</HashCode>
+      <FileName>Inventory\VoucherTrans.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Inventory.Warehouse" Collapsed="true">
+    <Position X="43.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAEAAAAAABAABAAQACAAAAAgCAAAAAAACAAA=</HashCode>
+      <FileName>Inventory\Warehouse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Migrations.ImportAll" Collapsed="true">
+    <Position X="136.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20231007051243_ImportAll.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Migrations.ImportAllRtid" Collapsed="true">
+    <Position X="138" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20231007063139_ImportAllRtid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Migrations.LedgerGroup_Migration" Collapsed="true">
+    <Position X="139.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20231008082113_LedgerGroup_Migration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Migrations.LedgerGroup_MigrationNull" Collapsed="true">
+    <Position X="141.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20231008082721_LedgerGroup_MigrationNull.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Migrations.UpdateDB" Collapsed="true">
+    <Position X="141.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20231012080601_Update-DB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.Migrations.OzoneErpContextModelSnapshot" Collapsed="true">
+    <Position X="139.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Migrations\OzoneErpContextModelSnapshot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="DataAccessLayer.General.Settings.Page" Collapsed="true">
+    <Position X="139.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>General\Settings\PageSettings.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DataAccessLayer.Inventory.VoucherType" Collapsed="true">
+    <Position X="139.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Inventory\AccountAegingTrans.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DataAccessLayer.Inventory.ItemType" Collapsed="true">
+    <Position X="138" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Inventory\Item.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DataAccessLayer.Inventory.PurchaseStatus" Collapsed="true">
+    <Position X="138" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAACAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Inventory\Purchase.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DataAccessLayer.Inventory.PurchasesStatus" Collapsed="true">
+    <Position X="136.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Inventory\Purchase.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DataAccessLayer.Inventory.PurchaseType" Collapsed="true">
+    <Position X="139.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAAAAAAAAAAAABAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Inventory\Purchase.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DataAccessLayer.Inventory.SalesType" Collapsed="true">
+    <Position X="138" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgYAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Inventory\Sales.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DataAccessLayer.Inventory.PaperSize" Collapsed="true">
+    <Position X="141.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Inventory\Sales.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DataAccessLayer.Inventory.SaleStatus" Collapsed="true">
+    <Position X="136.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAACAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Inventory\Sales.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DataAccessLayer.Inventory.SalesStatus" Collapsed="true">
+    <Position X="141.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAQAAAAAACAAAAA=</HashCode>
+      <FileName>Inventory\Sales.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DataAccessLayer.Inventory.CashType" Collapsed="true">
+    <Position X="136.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAQAAAAAAAABAAAAAAAAAAAAAAAAABAAAABAAAA=</HashCode>
+      <FileName>Inventory\Sales.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
