@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using DataAccessLayer.Procedure;
 using DataAccessLayer.Inventory;
+using DataAccessLayer.General.Masters.Models;
 
 namespace DataAccessLayer
 {
@@ -45,6 +46,10 @@ namespace DataAccessLayer
         //public DbSet<DataAccessLayer.General.Masters.State> States { get; set; } = default!;
         //public DbSet<DataAccessLayer.General.Masters.Tax> Taxes { get; set; } = default!;
         public DbSet<DataAccessLayer.General.Masters.User> Users { get; set; } = default!;
+        public DbSet<DataAccessLayer.General.Masters.Qualification> Qualifications { get; set; } = default!;
+        public DbSet<DataAccessLayer.General.Masters.OfferGroupType> OfferGroupTypes { get; set; } = default!;
+        public DbSet<Admission> Admissions { get; set; } = default!;
+        
         //public DbSet<DataAccessLayer.General.Masters.UserType> UserTypes { get; set; } = default!;
         //public DbSet<DataAccessLayer.General.Masters.Bank> Banks { get; set; } = default!;
         //public DbSet<DataAccessLayer.General.Masters.Coupon> Coupons { get; set; } = default!;
@@ -297,7 +302,7 @@ namespace DataAccessLayer
         //{
         //    var result = this.ResponseProcedure.FromSqlInterpolated($"call SP_RestoreSalesOrder({p2})").ToArray();
         //    return this.ResponseProcedure.FromSqlInterpolated($"call SP_RestoreSalesOrder({p2})").ToArray();
-            
+
 
         //}
 

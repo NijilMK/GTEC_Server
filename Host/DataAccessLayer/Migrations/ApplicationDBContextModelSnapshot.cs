@@ -20,7 +20,166 @@ namespace DataAccessLayer.Migrations
                 .HasAnnotation("ProductVersion", "8.0.15")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
+            ///MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
+
+            modelBuilder.Entity("DataAccessLayer.General.Masters.Models.Admission", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasMaxLength(300)
+                        .HasColumnType("varchar(300)");
+
+                    b.Property<DateTime>("AdmissionDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("ContactNo")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("varchar(15)");
+
+                    b.Property<int>("CourseDuration")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("DiscountAmount")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<float>("DiscountPrecent")
+                        .HasColumnType("float");
+
+                    b.Property<int>("FastDuration")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("FirstInstallment")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<string>("Geneder")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("varchar(10)");
+
+                    b.Property<int>("InstallmentsCount")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("InstalmentAmount")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<bool>("IsEmployeed")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<bool>("IsFast")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("MobileNo")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("varchar(15)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("varchar(150)");
+
+                    b.Property<decimal>("NetAmount")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("OfferAmount")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<int>("OfferGroupTypeID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("OfferType")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<bool>("OptInSMS")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("Parrent")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<byte[]>("Photo")
+                        .IsRequired()
+                        .HasColumnType("longblob");
+
+                    b.Property<int>("QualificationID")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("RegistrationFee")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<string>("Remarks")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
+
+                    b.Property<string>("Scheme")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<decimal>("TotalFee")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OfferGroupTypeID");
+
+                    b.HasIndex("QualificationID");
+
+                    b.ToTable("Admissions");
+                });
+
+            modelBuilder.Entity("DataAccessLayer.General.Masters.OfferGroupType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OfferGroupTypes");
+                });
+
+            modelBuilder.Entity("DataAccessLayer.General.Masters.Qualification", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Qualifications");
+                });
 
             modelBuilder.Entity("DataAccessLayer.General.Masters.User", b =>
                 {
@@ -57,6 +216,25 @@ namespace DataAccessLayer.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("DataAccessLayer.General.Masters.Models.Admission", b =>
+                {
+                    b.HasOne("DataAccessLayer.General.Masters.OfferGroupType", "OfferGroupType")
+                        .WithMany()
+                        .HasForeignKey("OfferGroupTypeID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DataAccessLayer.General.Masters.Qualification", "Qualification")
+                        .WithMany()
+                        .HasForeignKey("QualificationID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("OfferGroupType");
+
+                    b.Navigation("Qualification");
                 });
 #pragma warning restore 612, 618
         }
